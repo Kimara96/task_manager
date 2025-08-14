@@ -1,7 +1,16 @@
-# Ask user to input 
-first_name= input ("enter first name;")
-# Ask user to enter last name
-last_name = input ("enter last name;")
-full_name = first_name + " " + last_name
-# Print user's fullname in uppercase
-print (full_name.upper())
+import add
+import show
+import update
+import delete
+
+add_task_response = add.add_task("sleep")
+print (add_task_response)
+
+show_tasks_response = show.show_tasks()
+print (show_tasks_response)
+
+update_task_response = update.update_tasks("sleep,wake up")
+print (update_task_response)
+
+delete_task_response = delete.delete_task("wake up")
+print (delete_task_response)
